@@ -124,6 +124,38 @@ def deriveEToTheX(x):
 def deriveNaturalLog(x):
   return 1/x
 
+#Come back to work on this, need to figure out how to maintain the value of the derivative as a string
+def multiplyDerivatives():
+  dfx = float(input("Please enter the desired derivative of the first expression: "))
+  gx = float(input("Please enter the second expression: "))
+  dgx = float(input("Please enter the desired derivative of the second expression: "))
+  fx = float(input("Please enter the first expression: "))
+  
+  return str(dfx*gx + dgx*fx)
+
+def divideDerivatives():
+  dfx = float(input("Please enter the desired derivative of the first expression: "))
+  gx = float(input("Please enter the second expression: "))
+  dgx = float(input("Please enter the desired derivative of the second expression: "))
+  fx = float(input("Please enter the first expression: "))
+  
+  return str((dfx*gx + dgx*fx)/gx^2)
+
+
+#Integrals
+
+def constantIntegral(a):
+  return a + "x + C"
+
+def powerIntegral(a):
+  b = a+1
+  return "(x^" + b + ")/" + a + " + C"
+
+def eIntegral():
+  return "e^x + C"
+
+
+
 
 
 
