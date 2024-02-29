@@ -94,6 +94,38 @@ def stndDev(nums):
 
 
 # Calculus
+e = math.e
+
+#Derivatives
+def derivePower(x,y):
+  return y*x^(y-1)
+
+def deriveSine(x):
+  return math.cos(x)
+
+def deriveCosine(x):
+  return -math.sin(x)
+
+def deriveTangent(x):
+  return 1/(math.cos(x)^2)
+
+def deriveSecant(x):
+  return math.tan(x)/math.cos(x)
+
+def deriveCosecant(x):
+  return -1/(math.sin(x)*math.tan(x))
+
+def deriveCotangent(x):
+  return -1/(math.sin(x)^2)
+
+def deriveEToTheX(x):
+  return e^x
+
+def deriveNaturalLog(x):
+  return 1/x
+
+
+
 
 # Misc
 
