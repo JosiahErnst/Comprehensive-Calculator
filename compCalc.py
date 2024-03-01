@@ -154,12 +154,22 @@ def powerIntegral(a):
 def eIntegral():
   return "e^x + C"
 
+def sineIntegral(x):
+  return -math.cos(x)
 
+def cosineIntegral(x):
+  return math.sin(x)
 
+def tangentSecantSqrd(x):
+  return math.tan(x)
 
 
 
 # Misc
+
+
+
+
 
 
 
