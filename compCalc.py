@@ -166,7 +166,15 @@ def tangentSecantSqrd(x):
 
 
 # Misc
-
+def save(numList):
+  with open('savedValue.txt', 'w') as savefile:
+    for num in numList:
+      savefile.write(num + '\n')
+      
+def load():
+  with open('savedValue.txt', 'r') as loaded:
+    reload = loaded.readlines()
+    return reload
 
 
 
